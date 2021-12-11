@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+ <head>
+  <meta charset="utf-8">
+ <link rel="stylesheet" href="my.css">
+  <title>Таблица студентов</title>
+ </head>
+ <body>
+   <table border = "1" class="c1" id="c1">
+   <h1>Students</h1>
+   <tr>
+    <th>ФИО</th>
+    <th>Возраст</th>
+    <th>Телефон</th>
+    <th>E-mail</th>
+    <th>Пол</th>
+	<th>Изменение</th>
+   </tr>
+       <tr><td>Иванов Иван ИВанович</td><td>18</td><td>+9090909099</td><td>asaklsal@mail.ru</td><td>Мужской</td><td><button class = "elem3">Удалить</button><button class = "elem4">Изменить</button></td></tr>
+       <tr><td>Андреев Андрей Адреевич</td><td>18</td><td>+9098889099</td><td>asjkdjka@mail.ru</td><td>Мужской</td><td><button class = "elem3">Удалить</button><button class = "elem4">Изменить</button></td></tr>
+       <tr><td>Аленовна Алена Дмитриеевна</td><td>18</td><td>+7870909090</td><td>dddddsal@mail.ru</td><td>Женский</td><td><button class = "elem3">Удалить</button><button class = "elem4">Изменить</button></td></tr>
+       <tr><td>Аленовна Алена Дмитриеевна</td><td>18</td><td>+7870909090</td><td>dddddsal@mail.ru</td><td>Женский</td><td><button class = "elem3">Удалить</button><button class = "elem4">Изменить</button></td></tr>
+</table>
+
+<div class="add" id = "edit"  >
+<form action="">
+    <div class = "pos"><button type="button" class="span-close"   data-id = "edit">&times;</button></div>
+      <h3 class ="modal-title">Добавить ученика</h3>
+      <input type="hidden" id="Id" value="-1">
+      <label><input  id="name" class="name" type="text" placeholder = "ФИО" />ФИО</label> <br></br>
+	  <label><input id="age" class="age" type="text" placeholder = "возраст" />Возраст</label> <br></br>
+      <label><input id="phone" class="phone" type="text" placeholder = "номер тел."  />Телефон</label> <br></br>
+      <label><input id="email" class="email" type="text" placeholder = "e-mail" />E-mail</label> <br></br>
+	  <label><select id="gender"><option >Женский</option><option>Мужской</option></select></label> <br></br>
+      <button type="button" class="submit" data-func="submit">Добавить</button>
+    </form>
+</div>
+	
+	
+
+
+
+	<div class="delete" id="remove" >
+	<form action = "">
+        <div class ="pos1"><button type="button" class="span-close"   data-id = "remove">&times;</button></div>
+		<h2>Вы действительно хотите удалить?</h2>
+		<button type="button" class = "submit" data-func = "remove">Да</button>
+	</form>
+	</div>
+
+
+<button type="button" class = "add1">Добавить</button>
+
+
+<script src="1_1.js"></script>
+  </body>
+</html>
+
